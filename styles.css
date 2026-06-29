@@ -520,6 +520,46 @@ svg {
   border-top-color: rgba(16, 35, 33, 0.08);
 }
 
+.case-result-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.case-result-metrics li {
+  display: grid;
+  gap: 0.22rem;
+  padding: 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.case-result-metrics li::before {
+  display: none;
+}
+
+.case-result-metrics strong,
+.case-result-metrics span {
+  display: block;
+}
+
+.case-result-metrics strong {
+  color: var(--accent);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.case-result-metrics span {
+  color: rgba(16, 35, 33, 0.78);
+  font-size: 0.82rem;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
 .technical-project h3 {
   margin-top: 0.55rem;
   font-size: 1.15rem;
@@ -824,6 +864,7 @@ svg {
 
   .process-list,
   .useful-grid,
+  .case-result-metrics,
   .case-detail-grid {
     grid-template-columns: 1fr;
   }
